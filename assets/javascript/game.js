@@ -11,3 +11,11 @@
 // If the player goes over he loses.
 // The wins and losses will increment upon each game completion
 // and the game will restart with new values.
+
+window.onload = function() {
+	var gem1= Math.floor(Math.random()* (max 12 min 1));
+	var gem2= Math.floor(Math.random()* (max 12 min 1));
+	var gem3= Math.floor(Math.random()* (max 12 min 1));
+	var gem4= Math.floor(Math.random()* (max 12 min 1));
+	var goal= Math.floor(Math.random()* (max 120 min 19));
+};
