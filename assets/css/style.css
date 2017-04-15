@@ -1,3 +1,34 @@
-.col-xs-2 {
-	float: right !important;
+section {
+	width:960px;
+	height: 500px;
 }
+
+#intro {
+	width:45%;
+}
+
+#goal {
+	display: inline-block;	
+}
+
+#score {
+	width: 200px;	
+}
+
+#total {
+	width: 200px;
+}
+
+}
+/*#gem2 {
+	float: right;
+	width: 25%;
+}
+#gem3 {
+	float: right;
+	width: 25%;
+}
+#gem4 {
+	float: right;
+	width: 25%;
+}*/

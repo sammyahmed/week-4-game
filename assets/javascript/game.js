@@ -15,37 +15,56 @@
 // window.onload = function() {
 
  window.onload = function(){
- 	var gem1Value = Math.floor(Math.random() * 12 + 1);
-	var gem2Value = Math.floor(Math.random() * 12 + 1);
-	var gem3Value = Math.floor(Math.random() * 12 + 1);
-	var gem4Value = Math.floor(Math.random() * 12 + 1);
-	var gameGoal = Math.floor(Math.random() * ((121-2)+1) + 19);
-};
+ var gem1 = 0;
+ var gem2 = 0;
+ var gem3 = 0;
+ var gem4 = 0;
+
+
+}
+
+
+	$("#gempic1").on("click",function(){
+		gem1Value = Math.floor(Math.random() * 12 + 1);
+		console.log(gem1Value);
+	});
+	$("#gempic2").on("click",function(){
+		gem2Value = Math.floor(Math.random() * 12 + 1);
+		console.log(gem2Value);
+	});
+	$("#gempic3").on("click",function(){
+		gem3Value = Math.floor(Math.random() * 12 + 1);
+		console.log(gem3Value);
+	});
+	$("#gempic4").on("click",function(){
+		gem4Value = Math.floor(Math.random() * 12 + 1);
+		console.log(gem4Value);
+	});
+}
+	// var gem1Click = document.getElementById('gem1');
+	// var gem2Click;
+	// var gem3Click;
+	// var gem4Click;
 	
-	var gem1Click = document.getElementById('gem1');
-	var gem2Click;
-	var gem3Click;
-	var gem4Click;
-	
-	if (gem1Click<gamegoal){
+	// // if (gem1Click<gamegoal){
 
-	}; else if (gem1Click>gameGoal){
+	// }; else if (gem1Click>gameGoal){
 
-	}; else (gem1Click===gameGoal){
+	// }; else (gem1Click===gameGoal){
 
-	};
+	// };
 
 	// var gem1Value = document.getElementById("gem1");
-	// $("#gem1").click(function(){
-	// 	var gem1Add = $("gem1Value");
+	// $("#gem1").on("click",function(){
+	// 	if statement here
 	// });
 
 	// var totalScore = when any variation of gems are clicked until they =>
 	// var gem1Add = $("#gem1").on("click", function(){
 	// 	math(+ gem1Value);
 	// });
-	console.log(gem1Value);
-	console.log(gameGoal);
+	
+	// console.log(gem1);
 
 
 	
