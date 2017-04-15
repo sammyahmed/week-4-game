@@ -15,30 +15,32 @@
 // window.onload = function() {
 
  window.onload = function(){
- var gem1 = 0;
- var gem2 = 0;
- var gem3 = 0;
- var gem4 = 0;
+	 var gem1 = Math.floor(Math.random() * 12 + 1);
+	 var gem2 = Math.floor(Math.random() * 12 + 1);
+	 var gem3 = Math.floor(Math.random() * 12 + 1);
+	 var gem4 = Math.floor(Math.random() * 12 + 1);
+	 console.log(gem1);
+	 console.log(gem2);
+	 console.log(gem3);
+	 console.log(gem4);
 
-
-}
 
 
 	$("#gempic1").on("click",function(){
-		gem1Value = Math.floor(Math.random() * 12 + 1);
-		console.log(gem1Value);
+		event.preventDefault();
+		console.log(gem1);	
 	});
 	$("#gempic2").on("click",function(){
-		gem2Value = Math.floor(Math.random() * 12 + 1);
-		console.log(gem2Value);
+		event.preventDefault();
+		console.log(gem2);
 	});
 	$("#gempic3").on("click",function(){
-		gem3Value = Math.floor(Math.random() * 12 + 1);
-		console.log(gem3Value);
+		event.preventDefault();
+		console.log(gem3);
 	});
 	$("#gempic4").on("click",function(){
-		gem4Value = Math.floor(Math.random() * 12 + 1);
-		console.log(gem4Value);
+		event.preventDefault();
+		console.log(gem4);
 	});
 }
 	// var gem1Click = document.getElementById('gem1');
