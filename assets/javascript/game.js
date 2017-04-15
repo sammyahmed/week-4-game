@@ -12,10 +12,43 @@
 // The wins and losses will increment upon each game completion
 // and the game will restart with new values.
 
-window.onload = function() {
-	var gem1= Math.floor(Math.random()* (max 12 min 1));
-	var gem2= Math.floor(Math.random()* (max 12 min 1));
-	var gem3= Math.floor(Math.random()* (max 12 min 1));
-	var gem4= Math.floor(Math.random()* (max 12 min 1));
-	var goal= Math.floor(Math.random()* (max 120 min 19));
+// window.onload = function() {
+
+ window.onload = function(){
+ 	var gem1Value = Math.floor(Math.random() * 12 + 1);
+	var gem2Value = Math.floor(Math.random() * 12 + 1);
+	var gem3Value = Math.floor(Math.random() * 12 + 1);
+	var gem4Value = Math.floor(Math.random() * 12 + 1);
+	var gameGoal = Math.floor(Math.random() * ((121-2)+1) + 19);
 };
+	
+	var gem1Click = document.getElementById('gem1');
+	var gem2Click;
+	var gem3Click;
+	var gem4Click;
+	
+	if (gem1Click<gamegoal){
+
+	}; else if (gem1Click>gameGoal){
+
+	}; else (gem1Click===gameGoal){
+
+	};
+
+	// var gem1Value = document.getElementById("gem1");
+	// $("#gem1").click(function(){
+	// 	var gem1Add = $("gem1Value");
+	// });
+
+	// var totalScore = when any variation of gems are clicked until they =>
+	// var gem1Add = $("#gem1").on("click", function(){
+	// 	math(+ gem1Value);
+	// });
+	console.log(gem1Value);
+	console.log(gameGoal);
+
+
+	
+
+// $("#gem1").click("click", gem1Value);
+// console.log(gem1Value);
