@@ -26,13 +26,13 @@
 	 var gem2 = Math.floor(Math.random() * 12 + 1);
 	 var gem3 = Math.floor(Math.random() * 12 + 1);
 	 var gem4 = Math.floor(Math.random() * 12 + 1);
+	 document.querySelector("#goal").innerHTML = goal;
+	 document.querySelector("#score").innerHTML = score;
 	 console.log(gem1);
 	 console.log(gem2);
 	 console.log(gem3);
 	 console.log(gem4);
 	 console.log(goal);
-	 document.querySelector("#goal").innerHTML = goal;
-	 document.querySelector("#score").innerHTML = score;
 }
 	 var wins = 0;
 	 var losses = 0;
@@ -41,13 +41,14 @@
 
 	 document.querySelector("#progress").innerHTML = results;
 
-	$("#gempic1").on("click",function(){
+	$("#gempic1").on("click",function(gem1){
 		event.preventDefault();
+
 		// if (gem1<score){
 
-		// 	}; else if (gem1>gameGoal){
+		// 	}; else if (gem1>Goal){
 
-		// 		}; else (gem1===gameGoal){
+		// 		}; else (gem1===Goal){
 					
 		// };
 		console.log(gem1);
@@ -68,22 +69,14 @@
 
 	
 
+// steps left
+// adding the value of the gems1 to the score variable 
+// with the necessary conditions
+// reseting the onload function at the end of a game
+
+	
 
 
 	
 
-
 	
-
-	// var totalScore = when any variation of gems are clicked until they =>
-	// var gem1Add = $("#gem1").on("click", function(){
-	// 	math(+ gem1Value);
-	// });
-	
-	// console.log(gem1);
-
-
-	
-
-// $("#gem1").click("click", gem1Value);
-// console.log(gem1Value);

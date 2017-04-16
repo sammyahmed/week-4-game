@@ -7,11 +7,11 @@ section {
 	width:45%;
 }
 
-#goal {
-	display: inline-block;	
+#target {
+	width: 200px;	
 }
 
-#score {
+#progressbar {
 	width: 200px;	
 }
 
