@@ -15,7 +15,14 @@
 // window.onload = function() {
 
  window.onload = function(){
+ 	 var goal = Math.floor(Math.random() * 121 + 19);
+ 	 var score = 0;
 	 var gem1 = Math.floor(Math.random() * 12 + 1);
+	 var valAvail = [1-12];
+	 // find the index of gem 1 in the array above
+	 // delete used value from the array
+	 // 
+	 // var gem2 = valAvail[Math.floor(Math.random() * valAvail.length)];
 	 var gem2 = Math.floor(Math.random() * 12 + 1);
 	 var gem3 = Math.floor(Math.random() * 12 + 1);
 	 var gem4 = Math.floor(Math.random() * 12 + 1);
@@ -23,12 +30,28 @@
 	 console.log(gem2);
 	 console.log(gem3);
 	 console.log(gem4);
+	 console.log(goal);
+	 document.querySelector("#goal").innerHTML = goal;
+	 document.querySelector("#score").innerHTML = score;
+}
+	 var wins = 0;
+	 var losses = 0;
+	 var results = "<p>Wins: " + wins + "</p>" +
+          "<p>Losses: " + losses + "</p>";
 
-
+	 document.querySelector("#progress").innerHTML = results;
 
 	$("#gempic1").on("click",function(){
 		event.preventDefault();
-		console.log(gem1);	
+		// if (gem1<score){
+
+		// 	}; else if (gem1>gameGoal){
+
+		// 		}; else (gem1===gameGoal){
+					
+		// };
+		console.log(gem1);
+
 	});
 	$("#gempic2").on("click",function(){
 		event.preventDefault();
@@ -42,24 +65,15 @@
 		event.preventDefault();
 		console.log(gem4);
 	});
-}
-	// var gem1Click = document.getElementById('gem1');
-	// var gem2Click;
-	// var gem3Click;
-	// var gem4Click;
+
 	
-	// // if (gem1Click<gamegoal){
 
-	// }; else if (gem1Click>gameGoal){
 
-	// }; else (gem1Click===gameGoal){
 
-	// };
+	
 
-	// var gem1Value = document.getElementById("gem1");
-	// $("#gem1").on("click",function(){
-	// 	if statement here
-	// });
+
+	
 
 	// var totalScore = when any variation of gems are clicked until they =>
 	// var gem1Add = $("#gem1").on("click", function(){
