@@ -26,57 +26,61 @@
 	 var gem2 = Math.floor(Math.random() * 12 + 1);
 	 var gem3 = Math.floor(Math.random() * 12 + 1);
 	 var gem4 = Math.floor(Math.random() * 12 + 1);
-	 document.querySelector("#goal").innerHTML = goal;
-	 document.querySelector("#score").innerHTML = score;
-	 console.log(gem1);
-	 console.log(gem2);
-	 console.log(gem3);
-	 console.log(gem4);
-	 console.log(goal);
-}
 	 var wins = 0;
 	 var losses = 0;
-	 var results = "<p>Wins: " + wins + "</p>" +
+	 var results = "<h3>Wins: " + wins + "</h3>" +
           "<p>Losses: " + losses + "</p>";
-
+     document.querySelector("#goal").innerHTML = goal;
+	 document.querySelector("#score").innerHTML = score;
 	 document.querySelector("#progress").innerHTML = results;
 
-	$("#gempic1").on("click",function(gem1){
+	 $("#gempic1").on("click",function(){
 		event.preventDefault();
-
-		// if (gem1<score){
-
-		// 	}; else if (gem1>Goal){
-
-		// 		}; else (gem1===Goal){
-					
-		// };
+		score = gem1 + score;
+		document.querySelector("#score").innerHTML = score;
 		console.log(gem1);
-
 	});
 	$("#gempic2").on("click",function(){
 		event.preventDefault();
+		score = gem2 + score;
+		document.querySelector("#score").innerHTML = score;
 		console.log(gem2);
 	});
 	$("#gempic3").on("click",function(){
 		event.preventDefault();
+		score = gem3 + score;
+		document.querySelector("#score").innerHTML = score;
 		console.log(gem3);
 	});
 	$("#gempic4").on("click",function(){
 		event.preventDefault();
+		score = gem4 + score;
+		document.querySelector("#score").innerHTML = score;
 		console.log(gem4);
 	});
 
-	
+	function reset() {
+		if(score === goal){
+		wins++;}
+		else if(score>goal){
+		losses++;	
+		}
+		console.log(wins);
+		console.log(losses);
+	};
+	// window.onload function();
 
 // steps left
 // adding the value of the gems1 to the score variable 
 // with the necessary conditions
 // reseting the onload function at the end of a game
+// reset includes clearing variable score, new goal and what increments & rendering results(2)
+// win or losses
+// if score = goal then win++
+// else if score > goal losses++
+// reseting gem randomizer
 
-	
 
-
-	
+}	
 
 	
